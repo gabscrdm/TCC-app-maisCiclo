@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">+Ciclo_</string>
+
+    <string name="cadastro">Não tem uma conta? Cadastre-se</string>
+    <string name="comprovante">Comprovante de endereço de Indaiatuba</string>
+    <string name="name">Nome completo</string>
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Senha</string>
+    <string name="prompt_passwordConfirm">Confirme sua senha</string>
+    <string name="prompt_rg">RG</string>
+    <string name="prompt_cpf">CPF</string>
+    <string name="prompt_estado">Estado</string>
+    <string-array name="estado">
+        <item>Estado</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PR</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SP</item>
+        <item>SE</item>
+        <item>TO</item>
+    </string-array>
+
+    <string name="prompt_cidade">Cidade</string>
+    <string name="prompt_cep">CEP</string>
+    <string name="prompt_end">Endereço</string>
+    <string name="prompt_end_num">Nº</string>
+    <string name="button_cadastrar">ENVIAR</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="estacoes_page">ESTAÇÕES</string>
+    <string name="estacoes_bairro1">JD. ALICE</string>
+    <string name="estacoes_ender1">R. Antônio M. de Campos, 471</string>
+    <string name="estacoes_bairro2">PQ. DAS NAÇÕES</string>
+    <string name="estacoes_ender2">R. Luiz Cupini, 671</string>
+    <string name="estacoes_bairro3">PQ. INDAIÁ</string>
+    <string name="estacoes_ender3">R. Joaquim Gotardo, 151</string>
+    <string name="estacoes_bairro4">CECAP</string>
+    <string name="estacoes_ender4">R. Albério Minioli, 44</string>
+    <string name="estacoes_bairro5">VILA FURLAN</string>
+    <string name="estacoes_ender5">R. Capivari, 197</string>
+    <string name="carteira_page">CARTEIRA</string>
+    <string name="addcartao_page">NOVO CARTÃO</string>
+    <string name="carteira_saldo">Saldo atual</string>
+    <string name="carteira_valor">R$ 10,00</string>
+    <string name="carteira_recarga">Adicionar saldo PIX</string>
+    <string name="carteira_formas">Formas de pagamento:</string>
+    <string name="carteira_forma1">Saldo atual</string>
+    <string name="carteira_forma2">**** 3989 (Crédito)</string>
+    <string name="carteira_forma3">**** 5100 (Débito)</string>
+    <string name="carteira_apply">Aplicar</string>
+    <string name="carteira_adicionar">Novo cartão</string>
+    <string name="confira_estacao">selecione o bairro que deseja encontrar uma estação</string>
+    <string name="camera_aluguel">Aponte a câmera para o QRCode da bike que deseja destravar</string>
+    <string name="forma_pgto_aluguel">Forma de Pagamento</string>
+    <string name="reportar_aluguel">Reportar um problema</string>
+    <string name="reportar_tb">REPORTAR</string>
+    <string-array name="problemas">
+        <item>TIPO DE PROBLEMA</item>
+        <item>Avarias na Bike</item>
+        <item>Manutenção</item>
+        <item>QRCode ilegível</item>
+        <item>Ciclovia</item>
+    </string-array>
+    <string name="prompt_problemas">TIPO DE PROBLEMA</string>
+    <string name="conte_problema">Conte-nos sobre o problema que está reportando:</string>
+    <string name="report_enviar">ENVIAR</string>
+    <string name="pix">contato.maisciclo@gmail.com</string>
+    <string name="ok">OK</string>
+    <string name="copy">Copiar</string>
+</resources>

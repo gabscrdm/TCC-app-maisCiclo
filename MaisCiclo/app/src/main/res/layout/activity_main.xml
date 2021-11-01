@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/mobile_inicial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btAluguel"
+        android:layout_width="296dp"
+        android:layout_height="74dp"
+        android:drawableLeft="@drawable/bike"
+        android:drawableTint="#ffff"
+        android:fontFamily="sans-serif-black"
+        android:text="Alugar Bike"
+        android:textSize="20sp"
+        app:backgroundTint="#F81111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <Button
+        android:id="@+id/btEstacao"
+        android:layout_width="296dp"
+        android:layout_height="74dp"
+        android:drawableLeft="@drawable/loc"
+        android:drawableTint="#ffff"
+        android:fontFamily="sans-serif-black"
+        android:text="Estações"
+        android:textSize="20sp"
+        app:backgroundTint="#F81111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAluguel"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <Button
+        android:id="@+id/btPagamento"
+        android:layout_width="296dp"
+        android:layout_height="74dp"
+        android:drawableLeft="@drawable/carteira"
+        android:drawableTint="#ffff"
+        android:fontFamily="sans-serif-black"
+        android:text="Pagamento"
+        android:textSize="20sp"
+        app:backgroundTint="#F81111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEstacao"
+        app:layout_constraintVertical_bias="0.308" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "225313534553",
+    "firebase_url": "https://maisciclo-default-rtdb.firebaseio.com",
+    "project_id": "maisciclo",
+    "storage_bucket": "maisciclo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225313534553:android:29935e6ddd694a2b433748",
+        "android_client_info": {
+          "package_name": "com.example.maisciclo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225313534553-lfto6eneg5nuus037lv87bjulichv3t9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfR0Qd50PJtmtZSg-6O9pv6BV6_B9lh1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225313534553-lfto6eneg5nuus037lv87bjulichv3t9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

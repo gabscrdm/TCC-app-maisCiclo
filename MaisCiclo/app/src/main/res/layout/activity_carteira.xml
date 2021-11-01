@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Carteira"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    android:clickable="true"
+    tools:context=".Carteira">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbCarteira"
+        android:layout_width="416dp"
+        android:layout_height="55dp"
+        android:background="#E1D6D6"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:collapseIcon="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/imgFundoRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/abc_vector_test" />
+
+    <ImageView
+        android:id="@+id/imgCiclo4"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toEndOf="@+id/txtCarteira"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_ciclo_teste" />
+
+    <TextView
+        android:id="@+id/txtCarteira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/carteira_page"
+        android:textColor="#434242"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgFundoRed"
+        android:layout_width="412dp"
+        android:layout_height="182dp"
+        android:background="@android:color/holo_red_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbCarteira" />
+
+    <TextView
+        android:id="@+id/txtValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/carteira_valor"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgFundoRed"
+        app:layout_constraintTop_toBottomOf="@+id/tbCarteira" />
+
+    <TextView
+        android:id="@+id/txtSaldo"
+        android:layout_width="91dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/carteira_saldo"
+        android:textColor="#B2000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtValor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbCarteira"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtFormaPgto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/carteira_formas"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFundoRed" />
+
+    <Button
+        android:id="@+id/btRecarga"
+        android:layout_width="234dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/carteira_recarga"
+        android:visibility="visible"
+        app:backgroundTint="#000000"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValor" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="213dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFormaPgto">
+
+        <RadioButton
+            android:id="@+id/rdPgto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:onClick="checkButton"
+            android:text="@string/carteira_forma1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFormaPgto" />
+
+        <RadioButton
+            android:id="@+id/rdPgto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="@string/carteira_forma3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.135"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rdPgto2" />
+
+        <RadioButton
+            android:id="@+id/rdPgto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:onClick="checkButton"
+            android:text="@string/carteira_forma2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rdPgto" />
+
+        <Button
+            android:id="@+id/btApply"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="@string/carteira_apply"
+            app:backgroundTint="#FF0000" />
+
+        <Button
+            android:id="@+id/btNovoPgto"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="@string/carteira_adicionar"
+            app:backgroundTint="#FF0000" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgFundoRed"
+        app:layout_constraintEnd_toStartOf="@+id/txtValor"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/carteira" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
